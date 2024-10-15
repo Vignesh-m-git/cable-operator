@@ -1,0 +1,43 @@
+cable-operator/
+│
+├── backend/                           # Backend folder
+│   ├── config/
+│   │   └── db.js                      # Database connection file
+│   ├── controllers/                   # Controllers for different APIs
+│   │   ├── paymentController.js       # Handles UPI payments
+│   │   ├── reportController.js        # Handles CSV report generation
+│   │   └── userController.js          # Handles user CRUD operations
+│   ├── models/                        # MongoDB Models
+│   │   ├── user.js                    # User model
+│   │   ├── payment.js                 # Payment model
+│   │   └── package.js                 # Package model
+│   ├── routes/                        # API routes for each controller
+│   │   ├── userRoutes.js              # Routes for user management
+│   │   ├── paymentRoutes.js           # Routes for payment processing
+│   │   └── reportRoutes.js            # Routes for generating reports
+│   ├── reports/                       # Folder for storing generated reports
+│   ├── .env                           # Environment variables for backend
+│   ├── server.js                      # Main backend server entry point
+│   └── package.json                   # Backend project dependencies
+│
+├── frontend/                          # Frontend folder (React.js)
+│   ├── public/
+│   │   └── index.html                 # Main HTML file
+│   ├── src/
+│   │   ├── components/                # React components
+│   │   │   ├── Admin/                 # Admin portal components
+│   │   │   │   ├── AddUser.js         # Add user form
+│   │   │   │   ├── ManagePackages.js  # Manage packages page
+│   │   │   │   ├── GenerateReport.js  # Generate report page
+│   │   │   ├── Customer/              # Customer portal components
+│   │   │   │   ├── ViewBills.js       # View bills page
+│   │   │   │   └── PayUPI.js          # UPI payment form
+│   │   │   ├── Common/                # Common components (e.g., Navbar)
+│   │   │   │   └── Navbar.js          # Navigation bar
+│   │   ├── App.js                     # Main React component with routing
+│   │   └── index.js                   # React entry point
+│   ├── .env                           # Frontend environment variables (if any)
+│   └── package.json                   # Frontend project dependencies
+│
+├── README.md                          # Documentation for installation and usage
+└── package.json                       # Root project metadata
